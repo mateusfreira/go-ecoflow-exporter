@@ -1,5 +1,5 @@
 DB_URL=postgresql://postgres:postgres@timescaledb.docker-compose.orb.local:5432/postgres?sslmode=disable
-DOCKER_IMAGE_NAME = tess1o/go-ecoflow-exporter
+DOCKER_IMAGE_NAME = mateusfreira/go-ecoflow-exporter
 
 migrateup:
 	migrate -path db/migration -database "$(DB_URL)" -verbose up
